@@ -1,0 +1,20 @@
+# Install JAX/jaxlib for your hardware first; see README.md
+# PyTorch and TorchVision are also installed separately for feature extraction
+python-somax==1.1.0
+flax
+optax
+numpy
+scipy
+pandas
+matplotlib
+
+# CIFAR-100 input pipeline only. TensorFlow does not need GPU support
+tensorflow-cpu; sys_platform != "darwin"
+tensorflow; sys_platform == "darwin"
+tensorflow-datasets
+importlib_resources
+
+# Cars196 download and feature extraction
+datasets
+pillow
+tqdm
